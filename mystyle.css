@@ -1,0 +1,426 @@
+#Acasa {
+    position: relative;
+    padding-top: 70px;
+    color: dodgerblue;
+    background: url("style/main.jpg") center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+#Cere-Oferta {
+    width: 80%;
+    padding: left 10em;
+    padding: right 10em;
+    padding-top: 5em;
+    height: auto;
+    color: rgb(3, 3, 3);
+    background-color: #fff;
+}
+
+#Despre-Noi {
+    background: url("style/about.jpg") center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+
+#Contact {
+    color: #fff;
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #0d5873 75%);
+}
+
+h1.impact {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+a.contact-right {
+    position: absolute;
+    right: 0px;
+    padding: 0.2em;
+}
+
+p.polite {
+    font-size: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner {
+    text-shadow: 5px 5px 10px black;
+    color: white;
+    font-size: 6vw;
+    z-index: 1;
+}
+
+.btn {
+    z-index: 2;
+}
+
+.frontt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    left: 50%;
+    padding: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#more:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+#contact-box2 {
+    text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+    #Cere-Oferta {
+        width: 100%;
+    }
+    #myBtn {
+        display: none;
+    }
+    #Contact-box {
+        text-align: center;
+    }
+    #contact-box2 {
+        text-align: center;
+    }
+    #txt {
+        font-size: 1em;
+    }
+    #Despre-Noi {
+        height: auto;
+    }
+    .center {
+        text-align: center;
+        font-size: 20px;
+        display: none;
+    }
+    .center2 {
+        display: flex;
+        text-align: center;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        bottom: 8px;
+    }
+    .moving {
+        display: none;
+    }
+}
+
+#txt {
+    font-family: "source-han-sans-simplified-c", "source-han-sans-traditional", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.static {
+    position: static;
+}
+
+.center {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    bottom: 8px;
+    /*margin: auto;
+                                                                width: 50%;*/
+}
+
+.center2 {
+    display: none;
+}
+
+.panel-heading {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.panel-title {
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.panel-body {
+    padding: 0 18px;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+#aboutb.active,
+#aboutb.accordion:hover {
+    background-color: #ccc;
+}
+
+#about.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#aboutb.accordion:after {
+    content: '\02795';
+    color: white;
+    /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+}
+
+#aboutb.active:after {
+    color: white;
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+#anywhere {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.moving {
+    overflow: hidden;
+    position: absolute;
+    bottom: 5px;
+    height: 20px;
+    left: 0;
+}
+
+.moving h2 {
+    font-weight: bold;
+    display: inline-flex;
+    font-size: 12px;
+    color: #ffffff;
+    position: static;
+    margin: 0;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: moving 60s linear infinite;
+    -webkit-animation: moving 60s linear infinite;
+    animation: moving 60s linear infinite;
+}
+
+
+/* Move it (define the animation) */
+
+@-moz-keyframes moving {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes moving {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes moving {
+    0% {
+        -moz-transform: translateX(100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(100%);
+        /* Firefox bug fix */
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(-100%);
+        /* Firefox bug fix */
+        transform: translateX(-100%);
+    }
+}
